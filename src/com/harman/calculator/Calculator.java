@@ -7,6 +7,7 @@ public class Calculator {
         Addition addobj = new Addition();
         Subraction subobj = new Subraction();
         Multiply mulobj = new Multiply();
+        Divide divobj = new Divide();
         int x,y;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Num 1 :");
@@ -19,6 +20,9 @@ public class Calculator {
         System.out.println(subresult);
         int mulresult = mulobj.multiply2numbers(x,y);
         System.out.println(mulresult);
+        int divresult = divobj.divide2numbers(x,y);
+        System.out.println(divresult);
+
 
     }
 }
