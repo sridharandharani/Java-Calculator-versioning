@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Addition addobj = new Addition();
+        Subraction subobj = new Subraction();
         int x,y;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Num 1 :");
@@ -13,6 +14,8 @@ public class Calculator {
         y = input.nextInt();
         int addresult = addobj.add2numbers(x,y);
         System.out.println(addresult);
+        int subresult = subobj.sub2numbers(x,y);
+        System.out.println(subresult);
 
     }
 }
