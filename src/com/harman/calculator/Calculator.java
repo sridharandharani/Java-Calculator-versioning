@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
+        Addition addobj = new Addition();
         int x,y;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Num 1 :");
         x = input.nextInt();
         System.out.println("Enter the Num 2 :");
         y = input.nextInt();
+        int addresult = addobj.add2numbers(x,y);
+        System.out.println(addresult);
 
     }
 }
