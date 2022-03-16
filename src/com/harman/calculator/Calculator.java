@@ -6,6 +6,7 @@ public class Calculator {
     public static void main(String[] args) {
         Addition addobj = new Addition();
         Subraction subobj = new Subraction();
+        Division divobj = new Division();
         int x,y;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the Num 1 :");
@@ -16,6 +17,8 @@ public class Calculator {
         System.out.println(addresult);
         int subresult = subobj.sub2numbers(x,y);
         System.out.println(subresult);
+        int divresult = divobj.divide2numbers(x,y);
+        System.out.println(divresult);
 
     }
 }
